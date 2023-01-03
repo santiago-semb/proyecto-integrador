@@ -12,6 +12,13 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { SubNavComponent } from './sub-nav/sub-nav.component';
 import { Error404Component } from './error404/error404.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContentComponent } from './content/content.component';
+import { FormsModule } from '@angular/forms';
+import { SubNavCrudComponent } from './sub-nav-crud/sub-nav-crud.component';
+import { AccionesSkillsComponent } from './acciones-skills/acciones-skills.component';
+import { HtmlComponent } from './html/html.component';
+import { CssComponent } from './css/css.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +31,18 @@ import { Error404Component } from './error404/error404.component';
     NavComponent,
     FooterComponent,
     SubNavComponent,
-    Error404Component
+    Error404Component,
+    ContentComponent,
+    SubNavCrudComponent,
+    AccionesSkillsComponent,
+    HtmlComponent,
+    CssComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
