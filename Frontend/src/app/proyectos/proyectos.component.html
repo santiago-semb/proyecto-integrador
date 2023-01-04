@@ -15,7 +15,7 @@
       <tr *ngFor="let proyecto of proyectos;let i=index;" id="proyectos">
         <th id="id-proyecto" scope="row">{{i+1}}</th>
         <td id="nombre-proyecto">{{ proyecto.nombre }}</td>
-        <td id="lenguaje-proyecto" style="font-weight: bold;">{{ proyecto.lenguaje }}</td>
+        <td id="lenguaje-proyecto" style="font-weight: bold; text-transform: uppercase;">{{ proyecto.lenguaje }}</td>
         <td id="link-proyecto"><a href="{{proyecto.link}}" target="_blank" id="a-proyectos">{{ proyecto.link }}</a></td>
         <td id="boton-eliminar"><button class="btn btn-dark" (click)="eliminarProyecto(proyecto.id)">Eliminar</button></td>
       </tr>
